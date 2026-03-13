@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Om Kashikar | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fafc;
+    color:#1e293b;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:90px 20px;
+    background:linear-gradient(120deg,#2563eb,#38bdf8);
+    color:white;
+    animation:fadeDown 1.2s ease;
+}
+
+/* PROFILE PHOTO */
+.profile-pic{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:6px solid rgba(255,255,255,0.9);
+    object-fit:cover;
+    margin-bottom:20px;
+    animation:float 4s ease-in-out infinite;
+    box-shadow:0 0 25px rgba(255,255,255,0.6);
+}
+
+/* FLOAT ANIMATION */
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+}
+
+header h1{
+    font-size:52px;
+    font-weight:700;
+}
+
+header p{
+    font-size:18px;
+    margin-top:12px;
+    color:#e0f2fe;
+}
+
+/* NAVBAR */
+nav{
+    background:white;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:10;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+nav a{
+    color:#2563eb;
+    margin:0 18px;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#0f172a;
+    border-bottom:2px solid #2563eb;
+    padding-bottom:4px;
+}
+
+/* SECTION */
+section{
+    max-width:1050px;
+    margin:auto;
+    padding:70px 20px;
+    animation:fadeUp 1.2s ease;
+}
+
+section h2{
+    font-size:34px;
+    color:#2563eb;
+    margin-bottom:25px;
+    position:relative;
+}
+
+section h2::after{
+    content:"";
+    width:70px;
+    height:4px;
+    background:#38bdf8;
+    display:block;
+    margin-top:8px;
+    border-radius:5px;
+}
+
+/* ABOUT */
+.about p{
+    font-size:17px;
+    line-height:1.8;
+    color:#334155;
+}
+
+/* GRID CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:18px;
+    transition:0.35s;
+    border:1px solid rgba(0,0,0,0.08);
+    box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(37,99,235,0.2);
+}
+
+.card h3{
+    color:#1e40af;
+    margin-bottom:12px;
+    font-size:20px;
+}
+
+/* CONTACT */
+.contact-links a{
+    display:inline-block;
+    margin:12px 12px 0 0;
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.contact-links a:hover{
+    background:#1e40af;
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    background:#1e293b;
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+    color:#e2e8f0;
+    margin-top:40px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown{
+    from{opacity:0;transform:translateY(-40px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+    from{opacity:0;transform:translateY(40px);}
+    to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <!-- ✅ GOOGLE DRIVE PHOTO FIXED (THUMBNAIL METHOD) -->
+    <img class="profile-pic"
+         src="https://drive.google.com/thumbnail?id=13InipacQD6kt9N70OssXxePmvgRaw37A&sz=w1000"
+         alt="Om Kashikar Photo">
+
+    <h1>Om Kashikar</h1>
+    <p>BTech Computer Science Student | Future Software Developer</p>
+
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! I am <b>Om Kashikar</b>, a passionate BTech Computer Science Engineering student.
+        I enjoy learning programming concepts, building creative web projects, and improving my
+        problem-solving skills.  
+        My goal is to gain internship opportunities and grow into a successful software developer
+        in the future.
+    </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>BTech Computer Science Engineering</h3>
+            <p>
+                Currently pursuing BTech CSE (2nd Semester).  
+                Learning core subjects like Programming, Data Structures (Basics),
+                and Web Development.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Academic Interests</h3>
+            <p>
+                Interested in Software Development, Problem Solving, and
+                exploring new technologies like AI and Cybersecurity.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Career Objective</h3>
+            <p>
+                My goal is to build strong technical skills, gain internship experience,
+                and become a successful software engineer in the future.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Programming Languages</h3>
+            <p>
+                C (Strong Basics), Python (Beginner), Basic C++
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>
+                HTML, CSS, Responsive Web Design, Portfolio Building
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Computer Science Fundamentals</h3>
+            <p>
+                DBMS Basics, Operating Systems Intro, Computer Networks Basics
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Currently Learning</h3>
+            <p>
+                Data Structures (Arrays, Strings), Git & GitHub, JavaScript Basics
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Soft Skills</h3>
+            <p>
+                Teamwork, Communication, Quick Learner, Problem Solving Mindset
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Designed a professional responsive portfolio using HTML & CSS.</p>
+        </div>
+        <div class="card">
+            <h3>Student Result System</h3>
+            <p>C-based mini project for managing student academic results.</p>
+        </div>
+        <div class="card">
+            <h3>Restaurant Menu Website</h3>
+            <p>Created a simple menu interface with clean UI design.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>You can connect with me through:</p>
+
+    <div class="contact-links">
+        <a href="mailto:omkashikar0513@gmail.com">Email</a>
+
+        <a href="https://www.linkedin.com/in/om-kashikar-b423a8386"
+           target="_blank">LinkedIn</a>
+
+        <a href="https://github.com/Om0005"
+           target="_blank">GitHub</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Om Kashikar | Professional Portfolio Website
+</footer>
+
+</body>
+</html>
